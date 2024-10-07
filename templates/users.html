@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block contents %}
+  <h1>Users</h1>
+  {% if items %}
+  	<ul>
+    {% for item in items %}
+      <li>{{ item.first_name }} {{ item.last_name }} <small><a href="/user/{{ item.id }}">URL</a>, <a href="/user/{{ item.id }}" hx-boost="true">Boost</a>, <a href="/user/{{ item.id }}" hx-boost="true" hx-target="#contents">Fragment</a></small></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p class="fw-bold">No users.</p>
+  {% endif %}
+{#  {{ super() }}#}
+{% endblock %}

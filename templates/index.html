@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block contents %}
+	<h1>Home page</h1>
+  <p><a href="/docs">API access</a></p>
+  <p><a href="/user-list">Load user list via URL</a></p>
+  <p><a hx-boost="true" href="/user-list">Load user list via HTMX boost (replace body)</a></p>
+  <p><a hx-boost="true" href="/user-list" hx-target="#contents">Load user list via HTMX fragment (replace content)</a></p>
+{#  {{ super() }}#}
+{% endblock %}

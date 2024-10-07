@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block contents %}
+  <h1>User</h1>
+  <dl>
+  <dt>ID</dt><dd>{{ item.id }}</dd>
+  <dt>First name</dt><dd>{{ item.first_name }}</dd>
+  <dt>Last name</dt><dd>{{ item.last_name }}</dd>
+  </dl>
+{#  {{ super() }}#}
+{% endblock %}

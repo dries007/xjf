@@ -1,0 +1,5 @@
+fastapi~=0.115.0
+fasthx~=2.0.0
+jinja2-fragments~=1.6.0
+pydantic~=2.9.2
+starlette~=0.38.6
