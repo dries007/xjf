@@ -1,5 +1,7 @@
 fastapi~=0.115.0
-fasthx~=2.0.0
-jinja2-fragments~=1.6.0
+# fasthx>=2.0.0
+git+https://github.com/Qteal/fasthx@DKE-xh-json
+# jinja2-fragments~=1.6.0
+git+https://github.com/Qteal/jinja2-fragments@DKE-fasthx
 pydantic~=2.9.2
 starlette~=0.38.6
